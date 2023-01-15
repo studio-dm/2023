@@ -1,0 +1,169 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Page title -->
+  <title>Studiodm - David Morgan</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Mobile viewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+  <!-- Use Chrome Frame -->
+  <!--[if lt IE 9 ]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <![endif]-->
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="clearfix">
+
+    <!-- Title with black background -->
+    <h1 class="black"><!-- Remove class="black" for simple title -->
+      <a href="index.html"><img src="img/logo.png" alt=""></a>
+    </h1>
+
+    <!-- Menu -->
+    <nav>
+
+      <!-- Desktop navigation -->
+      <ul>
+        <li>
+          <a href="about.html" class="selected">David Morgan</a>
+        </li>
+        <li>
+          <a href="gallery.html" class="selected">Galleries</a>
+          <ul>
+            <li><a href="gallery.html" class="selected">Photo Gallery One</a></li>
+            <li><a href="gallery-2.html" class="selected">Photo Gallery Two</a></li>
+            <li><a href="gallery-3.html" class="selected">Photo Gallery Three</a></li>
+          </ul>
+        </li>
+        <li><a href="showreel.html">Showreel</a></li>
+        <li><a href="about.html" class="selected">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Mobile navigation -->
+      <div class="mobile"></div>
+
+    </nav>
+
+
+    <!-- Social -->
+    <ul class="social">
+      <li><a href="#"><img src="img/social/glyphicons_390_facebook.png" alt="Facebook"></a></li>
+      <li><a href="#"><img src="img/social/glyphicons_392_twitter.png" alt="Twitter"></a></li>
+      <li><a href="#"><img src="img/social/glyphicons_362_google+_alt.png" alt="Google+"></a></li>
+      <li><a href="#"><img src="img/social/glyphicons_377_linked_in.png" alt="LinkedIn"></a></li>
+      <li><a href="#"><img src="img/social/glyphicons_395_flickr.png" alt="Flickr"></a></li>
+      <li><a href="#"><img src="img/social/glyphicons_374_dribbble.png" alt="Dribbble"></a></li>
+      <li><a href="#"><img src="img/social/glyphicons_399_e-mail.png" alt="E-mail"></a></li>
+    </ul>
+
+  </header>
+ 
+ 
+ <!-- Map -->
+<div class="map left" id="map">
+  
+  <div class="google_map" data-latitude="40.75" data-longitude="-74.0" data-zoom="15"></div>
+
+</div>
+
+
+<!-- Contact layout -->
+<section class="layout contact right"><div class="skew"></div>
+  
+  <h1>Contact</h1>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at turpis nisi, vitae ullamcorper elit. Proin rhoncus bibendum sollicitudin. Mauris interdum, erat vitae dignissim placerat, nunc elit vehicula elit, in dignissim lacus leo at dolor.</p>
+
+  <br>
+
+  <!-- Contact information -->
+  <p class="column">
+    <strong>Offices:</strong><br>
+    123 Wall Street<br>
+    New York, USA
+  </p>
+  <p class="column">
+    <strong>Contact:</strong><br>
+    difference@equiet.sk<br>
+    1 800 123 456
+  </p>
+
+  <div class="clearfix"></div>
+  <br>
+
+  <h3>Send us an e-mail</h3>
+
+  <!-- Contact form -->
+  <form action="#" id="contact_form">
+
+    <div class="one_half first">
+      <label for="name">Your name:</label>
+      <input name="name" id="name" type="text">
+    </div>
+
+    <div class="one_half last">
+      <label for="email">E-mail:</label>
+      <input name="email" id="email" type="email">
+    </div>
+
+    <div>
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    </div>
+
+    <div>
+      <input type="submit" value="Send" class="button">
+      <p class="status"></p>
+    </div>
+
+  </form>
+
+</section> 
+ 
+  <div class="clearfix"></div>
+
+
+  <!-- jQuery -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+
+  <!-- Scripts -->
+  <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script src="js/jquery.fancybox-1.3.4.pack.js"></script>
+  <script src="js/jquery.masonry.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <!-- Prompt IE 6 users to install Chrome Frame -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
+</body>
+</html>
